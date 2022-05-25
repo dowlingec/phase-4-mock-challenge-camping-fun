@@ -4,4 +4,7 @@ class CampersController < ApplicationController
         campers = Camper.all
         render json: campers
     end
+
+    def show
+    end
 end
