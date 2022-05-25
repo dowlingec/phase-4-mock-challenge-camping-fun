@@ -16,7 +16,11 @@ class CampersController < ApplicationController
 
     def create
         camper = Camper.create!(camper_params)
-        return render json: camper
+        # if camper
+            return render json: camper
+        # else
+            # return { "errors": "Error posting??"}
+        # end
     end
 
     private
