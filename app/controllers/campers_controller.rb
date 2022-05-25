@@ -6,5 +6,7 @@ class CampersController < ApplicationController
     end
 
     def show
+        camper = Camper.find_by(id: params[:id])
+        render json: camper
     end
 end
